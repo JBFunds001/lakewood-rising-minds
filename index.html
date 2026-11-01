@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lakewood Rising Minds | Empower Youth, Inspire Change</title>
+<meta name="description" content="Lakewood Rising Minds is a youth nonprofit offering mentoring, learning support and real chances to lead for young people in our community.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0F2A28">
+<meta property="og:title" content="Lakewood Rising Minds">
+<meta property="og:description" content="Empower youth, inspire change. Mentoring, learning support and leadership for Lakewood's young people.">
+<meta property="og:image" content="images/lakewood-classroom-girl.webp">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="images/lakewood-classroom-girl.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F6F2EA}
+a{color:#0F2A28}
+::selection{background:#F2B33D;color:#0F2A28}
+section[id]{scroll-margin-top:24px}
+
+@keyframes lrmUp{from{transform:translateY(110%)}to{transform:none}}
+@keyframes lrmFade{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes lrmClip{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes lrmSettle{from{transform:scale(1.3)}to{transform:scale(1)}}
+@keyframes lrmSpin{to{transform:rotate(360deg)}}
+@keyframes lrmMarq{to{transform:translateX(-50%)}}
+@keyframes lrmMenu{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:none}}
+.ln{display:block;overflow:hidden;padding-bottom:.06em}
+.ln > span{display:inline-block;animation:lrmUp 1.15s cubic-bezier(.16,1,.3,1) both}
+.l2 > span{animation-delay:.12s}.l3 > span{animation-delay:.24s}
+.fd{animation:lrmFade 1s cubic-bezier(.16,1,.3,1) both}
+.f1{animation-delay:.45s}.f2{animation-delay:.6s}.f3{animation-delay:.75s}
+.clip{animation:lrmClip 1.5s cubic-bezier(.77,0,.18,1) .15s both}
+.clip2{animation:lrmClip 1.4s cubic-bezier(.77,0,.18,1) .55s both}
+.settle{animation:lrmSettle 2.2s cubic-bezier(.16,1,.3,1) .15s both}
+.spin{animation:lrmSpin 24s linear infinite}
+.marq{animation:lrmMarq 38s linear infinite}
+.menu{animation:lrmMenu .45s cubic-bezier(.16,1,.3,1) both}
+
+@keyframes lrmRv{from{opacity:0;transform:translateY(56px)}to{opacity:1;transform:none}}
+@keyframes lrmPx{from{transform:translateY(-9%) scale(1.18)}to{transform:translateY(9%) scale(1.18)}}
+@keyframes lrmGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@supports (animation-timeline: view()){
+  .rv{animation:lrmRv linear both;animation-timeline:view();animation-range:entry 0% cover 26%}
+  .px{animation:lrmPx linear both;animation-timeline:view();animation-range:cover 0% cover 100%}
+  .rule{transform-origin:left;animation:lrmGrow linear both;animation-timeline:view();animation-range:entry 0% cover 30%}
+}
+
+.zimg{transition:transform 1.3s cubic-bezier(.16,1,.3,1)}
+.row:hover .zimg,.panel:hover .zimg{transform:scale(1.07)}
+.btn{transition:transform .35s cubic-bezier(.16,1,.3,1),background-color .3s,color .3s}
+.btn:hover{transform:translateY(-3px)}
+.chip{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;border-radius:999px;transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.btn:hover .chip,.row:hover .chip,.panel:hover .chip,.tl:hover .chip{transform:rotate(45deg)}
+.ul{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1.5px no-repeat;transition:background-size .45s cubic-bezier(.16,1,.3,1)}
+.ul:hover{background-size:100% 1.5px}
+.tl{text-decoration:none}
+.menu-btn{display:none}
+.fld{transition:border-color .25s,box-shadow .25s}
+.fld::placeholder{color:#9AA5A3}
+.fld:hover{border-color:#C9C0AE}
+.fld:focus{outline:none;border-color:#0E7C7C;box-shadow:0 0 0 4px rgba(19,163,163,.18)}
+a:focus-visible,button:focus-visible{outline:2.5px solid #13A3A3;outline-offset:3px}
+@keyframes lrmDraw{from{stroke-dashoffset:60}to{stroke-dashoffset:0}}
+.draw{stroke-dasharray:60;animation:lrmDraw .7s cubic-bezier(.16,1,.3,1) .25s both}
+
+@container lrm (max-width: 780px){
+  .nav-links{display:none !important}
+  .menu-btn{display:flex !important}
+  .hero-media{height:520px !important}
+  .badge{width:118px !important;height:118px !important;left:auto !important;right:10px !important;top:-40px !important}
+  .prog{grid-template-columns:1fr !important;gap:18px !important}
+  .prog .pimg{height:220px !important}
+  .split{grid-template-columns:1fr !important}
+  .donate-panel{padding:28px 22px !important}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .ln > span,.fd,.clip,.clip2,.settle,.spin,.marq,.rv,.px,.rule,.menu{animation:none !important}
+}
+
+[hidden]{display:none !important}
+.freq{background:transparent;color:#C5D6D3}
+.freq[aria-pressed="true"]{background:#F6F2EA;color:#0F2A28}
+.amt{background:transparent;color:#F6F2EA;border:1.5px solid #3E5F5B}
+.amt:hover{border-color:#7E9C98}
+.amt[aria-pressed="true"]{background:#F2B33D;color:#0F2A28;border-color:#F2B33D}
+.topic{background:#FAF8F4;color:#0F2A28;border:1.5px solid #E2DBCC}
+.topic:hover{border-color:#C9C0AE}
+.topic .tick{display:none}
+.topic[aria-pressed="true"]{background:#0F2A28;color:#F6F2EA;border-color:#0F2A28}
+.topic[aria-pressed="true"] .tick{display:inline}
+#menuBtn .ic-close{display:none}
+#menuBtn[aria-expanded="true"] .ic-close{display:block}
+#menuBtn[aria-expanded="true"] .ic-open{display:none}
+.fld.err{border-color:#B3261E;box-shadow:0 0 0 4px rgba(179,38,30,.12)}
+/* scroll reveals for browsers without scroll-driven animations */
+html.io .rv{opacity:0;transform:translateY(48px);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}
+html.io .rv.in{opacity:1;transform:none}
+html.io .rule{transform:scaleX(0);transform-origin:left;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+html.io .rule.in{transform:scaleX(1)}
+@media (prefers-reduced-motion: reduce){html.io .rv,html.io .rule{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div style="container-type: inline-size; container-name: lrm; font-family: 'Instrument Sans', system-ui, sans-serif; color: #0F2A28; background: #F6F2EA; width: 100%; overflow: hidden; position: relative;">
+
+  <div style="height: 5px; background: #13A3A3;"></div>
+
+  <!-- HEADER -->
+  <header style="max-width: 1360px; margin: 0 auto; padding: 24px clamp(20px, 3.4cqw, 48px); box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+    <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #0F2A28;">
+      <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="15" fill="#0F2A28"></circle><path d="M7 19.5a8 8 0 0 1 16 0" fill="#F2B33D"></path><rect x="5" y="19.5" width="20" height="2" fill="#F6F2EA"></rect></svg>
+      <span style="font-weight: 700; font-size: clamp(12px, 1cqw, 14px); letter-spacing: 0.24em;">LAKEWOOD RISING MINDS</span>
+    </a>
+    <nav class="nav-links" aria-label="Main" style="display: flex; align-items: center; gap: 34px; font-size: 16px; font-weight: 500;">
+      <a class="ul" href="#about" style="color: #0F2A28;">About</a>
+      <a class="ul" href="#programs" style="color: #0F2A28;">Programs</a>
+      <a class="ul" href="#involved" style="color: #0F2A28;">Get involved</a>
+      <a class="ul" href="#contact" style="color: #0F2A28;">Contact</a>
+      <a class="btn" href="#donate" style="display: inline-flex; align-items: center; gap: 12px; background: #0F2A28; color: #F6F2EA; text-decoration: none; padding: 7px 7px 7px 22px; border-radius: 999px; font-weight: 600;">Donate
+        <span class="chip" style="width: 34px; height: 34px; background: #F2B33D;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F2A28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+      </a>
+    </nav>
+    <button class="menu-btn" type="button" id="menuBtn" aria-controls="mobileMenu" aria-label="Open menu" aria-expanded="false" style="width: 48px; height: 48px; border: 0; border-radius: 999px; background: #0F2A28; align-items: center; justify-content: center; cursor: pointer;">
+      <svg class="ic-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F6F2EA" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+      <svg class="ic-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F6F2EA" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"></path></svg>
+    </button>
+  </header>
+
+  <!-- MOBILE MENU -->
+   <div id="mobileMenu" class="menu" hidden style="position: absolute; top: 101px; left: 12px; right: 12px; z-index: 20; background: #0F2A28; color: #F6F2EA; border-radius: 18px; padding: 28px 26px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 30px 60px rgba(15,42,40,0.35);">
+      <a href="#about" data-close-menu style="color: #F6F2EA; text-decoration: none; font-family: 'Playfair Display', Georgia, serif; font-size: 34px; padding: 6px 0;">About</a>
+      <a href="#programs" data-close-menu style="color: #F6F2EA; text-decoration: none; font-family: 'Playfair Display', Georgia, serif; font-size: 34px; padding: 6px 0;">Programs</a>
+      <a href="#involved" data-close-menu style="color: #F6F2EA; text-decoration: none; font-family: 'Playfair Display', Georgia, serif; font-size: 34px; padding: 6px 0;">Get involved</a>
+      <a href="#contact" data-close-menu style="color: #F6F2EA; text-decoration: none; font-family: 'Playfair Display', Georgia, serif; font-size: 34px; padding: 6px 0;">Contact</a>
+      <a href="#donate" data-close-menu style="margin-top: 14px; display: flex; align-items: center; justify-content: space-between; background: #F2B33D; color: #0F2A28; text-decoration: none; padding: 8px 8px 8px 24px; border-radius: 999px; font-weight: 700; font-size: 17px;">Make a donation
+        <span class="chip" style="width: 44px; height: 44px; background: #0F2A28;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F2B33D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+      </a>
+    </div>
+
+  <!-- HERO -->
+  <section id="top" style="max-width: 1360px; margin: 0 auto; padding: clamp(24px, 3cqw, 48px) clamp(20px, 3.4cqw, 48px) clamp(64px, 7cqw, 110px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: clamp(40px, 4cqw, 72px); align-items: flex-end;">
+    <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 30px;">
+      <span class="fd" style="display: inline-flex; align-items: center; gap: 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.04em; color: #3D5552;"><span style="width: 36px; height: 1.5px; background: #13A3A3;"></span>A youth nonprofit in Lakewood</span>
+      <h1 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(54px, 8.4cqw, 128px); line-height: 0.96; letter-spacing: -0.035em;">
+        <span class="ln"><span>Empower</span></span>
+        <span class="ln l2"><span>youth, <em style="font-style: italic; color: #13A3A3;">inspire</em></span></span>
+        <span class="ln l3"><span>change.</span></span>
+      </h1>
+      <p class="fd f1" style="margin: 0; font-size: clamp(18px, 1.4cqw, 20px); line-height: 1.6; color: #3D5552; max-width: 480px;">Mentoring, learning support and real chances to lead, for every young person in our community who deserves someone in their corner.</p>
+      <div class="fd f2" style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center;">
+        <a class="btn" href="#donate" style="display: inline-flex; align-items: center; gap: 16px; background: #F2B33D; color: #0F2A28; text-decoration: none; padding: 8px 8px 8px 28px; border-radius: 999px; font-weight: 700; font-size: 16px;">Make a donation
+          <span class="chip" style="width: 44px; height: 44px; background: #0F2A28;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F2B33D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+        </a>
+        <a class="btn" href="#involved" style="display: inline-flex; align-items: center; height: 60px; box-sizing: border-box; color: #0F2A28; text-decoration: none; padding: 0 28px; border-radius: 999px; font-weight: 600; font-size: 16px; border: 1.5px solid #0F2A28;">Become a mentor</a>
+      </div>
+    </div>
+    <div class="hero-media" style="flex: 1 1 480px; min-width: 0; position: relative; height: 660px;">
+      <div class="clip" style="position: absolute; top: 0; left: 0; width: 88%; height: 86%; border-radius: 14px; overflow: hidden; background: #DCD5C7;">
+        <img class="settle" src="images/lakewood-classroom-girl.webp" alt="A smiling girl holding a tablet in a bright Lakewood classroom, with classmates and a teacher behind her" loading="eager" fetchpriority="high" decoding="async" style="width: 100%; height: 100%; object-fit: cover; object-position: 30% 40%; display: block;">
+      </div>
+      <figure class="clip2" style="position: absolute; right: 0; bottom: 0; width: 46%; margin: 0; background: #F6F2EA; padding: 8px 8px 0; border-radius: 16px; box-sizing: border-box; box-shadow: 0 24px 50px rgba(15,42,40,0.16);">
+        <div style="aspect-ratio: 1.5; border-radius: 10px; overflow: hidden; background: #DCD5C7;">
+          <img src="images/classroom.webp" alt="Students in a bright classroom, one raising her hand" loading="eager" decoding="async" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; display: block;">
+        </div>
+        <figcaption style="display: flex; align-items: center; gap: 10px; padding: 12px 6px 14px; font-size: 14px; font-weight: 600; color: #3D5552;"><span style="width: 8px; height: 8px; border-radius: 999px; background: #13A3A3;"></span>Every child, seen and supported</figcaption>
+      </figure>
+      <div class="badge fd f3" style="position: absolute; right: 2%; top: -4%; width: 150px; height: 150px; border-radius: 999px; background: #F2B33D; display: flex; align-items: center; justify-content: center;">
+        <svg class="spin" viewBox="0 0 200 200" width="100%" height="100%" style="position: absolute; top: 0; left: 0;" aria-hidden="true">
+          <defs><path id="lrmCirc" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"></path></defs>
+          <text font-family="Instrument Sans, sans-serif" font-size="15" font-weight="700" letter-spacing="2.6" fill="#0F2A28"><textPath href="#lrmCirc" textLength="460">EMPOWER YOUTH ✦ INSPIRE CHANGE ✦ LAKEWOOD ✦</textPath></text>
+        </svg>
+        <svg width="44" height="44" viewBox="0 0 30 30" aria-hidden="true"><path d="M5 20a10 10 0 0 1 20 0" fill="#0F2A28"></path><rect x="2" y="21" width="26" height="2.2" fill="#0F2A28"></rect><path d="M15 3v4M6.5 6.5l2.6 2.6M23.5 6.5l-2.6 2.6" stroke="#0F2A28" stroke-width="2" stroke-linecap="round"></path></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div style="background: #0F2A28; color: #F6F2EA; overflow: hidden; padding: 26px 0;" aria-hidden="true">
+    <div class="marq" style="display: flex; align-items: center; width: max-content; gap: 48px; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(28px, 2.6cqw, 40px); font-style: italic; white-space: nowrap;">
+      <span>Mentorship</span><span style="color: #F2B33D;">✦</span><span>Learning</span><span style="color: #F2B33D;">✦</span><span>Leadership</span><span style="color: #F2B33D;">✦</span><span>Community</span><span style="color: #F2B33D;">✦</span><span>Belonging</span><span style="color: #F2B33D;">✦</span>
+      <span>Mentorship</span><span style="color: #F2B33D;">✦</span><span>Learning</span><span style="color: #F2B33D;">✦</span><span>Leadership</span><span style="color: #F2B33D;">✦</span><span>Community</span><span style="color: #F2B33D;">✦</span><span>Belonging</span><span style="color: #F2B33D;">✦</span>
+    </div>
+  </div>
+
+  <!-- MISSION -->
+  <section id="about" style="max-width: 1360px; margin: 0 auto; padding: clamp(80px, 10cqw, 150px) clamp(20px, 3.4cqw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 40px;">
+    <div class="rv" style="flex: 1 1 200px; min-width: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.04em; color: #3D5552; display: flex; align-items: flex-start; gap: 12px;"><span style="width: 36px; height: 1.5px; background: #13A3A3; margin-top: 10px;"></span>Our mission</div>
+    <div style="flex: 4 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 36px;">
+      <p class="rv" style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(32px, 3.9cqw, 58px); line-height: 1.18; letter-spacing: -0.02em; font-weight: 400;">Every young person deserves someone <span style="display: inline-block; width: 1.9em; height: 0.82em; border-radius: 999px; overflow: hidden; vertical-align: -0.06em; background: #DCD5C7;"><img src="images/classroom.webp" alt="" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; display: block;"></span> in their corner. We show up with mentoring, learning and <em style="color: #13A3A3;">real chances to lead</em>, so Lakewood's youth can rise <span style="display: inline-block; width: 1.9em; height: 0.82em; border-radius: 999px; overflow: hidden; vertical-align: -0.06em; background: #DCD5C7;"><img src="images/reading-table.webp" alt="" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%; display: block;"></span> to who they're meant to be.</p>
+      <a class="rv tl" href="#about" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 14px; font-weight: 600; font-size: 17px; color: #0F2A28;">Read our story
+        <span class="chip" style="width: 38px; height: 38px; border: 1.5px solid #0F2A28;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0F2A28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs" style="max-width: 1360px; margin: 0 auto; padding: 0 clamp(20px, 3.4cqw, 48px) clamp(80px, 9cqw, 140px); box-sizing: border-box;">
+    <div class="rv" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; padding-bottom: 48px;">
+      <h2 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(40px, 5cqw, 76px); line-height: 1; letter-spacing: -0.03em; font-weight: 400;">What we <em style="color: #13A3A3;">do</em></h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3D5552; max-width: 380px;">Three programs, one goal: help every young person find their footing and their voice.</p>
+    </div>
+
+    <a class="row" href="#programs" style="display: block; text-decoration: none; color: #0F2A28;">
+      <div class="rule" style="height: 1.5px; background: #0F2A28;"></div>
+      <div class="prog rv" style="display: grid; grid-template-columns: 90px minmax(0, 1fr) 420px; gap: 40px; align-items: center; padding: 36px 0;">
+        <span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 22px; color: #13A3A3;">01</span>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(32px, 3.2cqw, 48px); font-weight: 400; letter-spacing: -0.02em; display: flex; align-items: center; gap: 18px;">Mentorship
+            <span class="chip" style="width: 42px; height: 42px; background: #13A3A3;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+          </h3>
+          <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3D5552; max-width: 520px;">One-on-one time with a caring adult who helps them set goals, push through setbacks and believe in what they can do.</p>
+        </div>
+        <div class="pimg" style="height: 250px; border-radius: 12px; overflow: hidden; background: #DCD5C7;"><img class="zimg" src="images/mentoring.webp" alt="Young people laughing together around a table with laptops" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+      </div>
+    </a>
+    <a class="row" href="#programs" style="display: block; text-decoration: none; color: #0F2A28;">
+      <div class="rule" style="height: 1.5px; background: #0F2A28;"></div>
+      <div class="prog rv" style="display: grid; grid-template-columns: 90px minmax(0, 1fr) 420px; gap: 40px; align-items: center; padding: 36px 0;">
+        <span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 22px; color: #13A3A3;">02</span>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(32px, 3.2cqw, 48px); font-weight: 400; letter-spacing: -0.02em; display: flex; align-items: center; gap: 18px;">Learning support
+            <span class="chip" style="width: 42px; height: 42px; background: #13A3A3;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+          </h3>
+          <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3D5552; max-width: 520px;">Tutoring and study help at their own pace, turning "I can't" into "I've got this," one assignment at a time.</p>
+        </div>
+        <div class="pimg" style="height: 250px; border-radius: 12px; overflow: hidden; background: #DCD5C7;"><img class="zimg" src="images/reading-table.webp" alt="Children working on reading and writing at a classroom table" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%; display: block;"></div>
+      </div>
+    </a>
+    <a class="row" href="#programs" style="display: block; text-decoration: none; color: #0F2A28;">
+      <div class="rule" style="height: 1.5px; background: #0F2A28;"></div>
+      <div class="prog rv" style="display: grid; grid-template-columns: 90px minmax(0, 1fr) 420px; gap: 40px; align-items: center; padding: 36px 0;">
+        <span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 22px; color: #13A3A3;">03</span>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(32px, 3.2cqw, 48px); font-weight: 400; letter-spacing: -0.02em; display: flex; align-items: center; gap: 18px;">Leadership &amp; community
+            <span class="chip" style="width: 42px; height: 42px; background: #13A3A3;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+          </h3>
+          <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3D5552; max-width: 520px;">Youth-led projects where they serve their neighborhood and discover the change they're able to make.</p>
+        </div>
+        <div class="pimg" style="height: 250px; border-radius: 12px; overflow: hidden; background: #DCD5C7;"><img class="zimg" src="images/volunteer.webp" alt="A young volunteer in a volunteer shirt at a community event" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+      </div>
+      <div class="rule" style="height: 1.5px; background: #0F2A28;"></div>
+    </a>
+  </section>
+
+  <!-- PARALLAX STATEMENT -->
+  <section style="position: relative; height: clamp(560px, 52cqw, 760px); overflow: hidden; background: #0F2A28;">
+    <img class="px" src="images/sunrise.webp" alt="A group of young people with arms around each other, watching the sun rise over hills" loading="lazy" decoding="async" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(10,26,24,0.88) 0%, rgba(10,26,24,0.25) 55%, rgba(10,26,24,0.1) 100%);"></div>
+    <div style="position: absolute; left: 0; right: 0; bottom: 0; max-width: 1360px; margin: 0 auto; padding: 0 clamp(20px, 3.4cqw, 48px) clamp(48px, 5cqw, 80px); box-sizing: border-box;">
+      <figure class="rv" style="margin: 0; max-width: 900px; display: flex; flex-direction: column; gap: 22px; color: #F6F2EA;">
+        <blockquote style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(32px, 4cqw, 60px); line-height: 1.12; letter-spacing: -0.02em; font-weight: 400;">We'll never see a young person as a problem to fix, only <em style="color: #F2B33D;">potential waiting to rise.</em></blockquote>
+        <figcaption style="font-size: 16px; font-weight: 600; letter-spacing: 0.04em; color: #D5E2DF; display: flex; align-items: center; gap: 12px;"><span style="width: 36px; height: 1.5px; background: #F2B33D;"></span>Our promise to every family</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- DONATE -->
+  <section id="donate" style="max-width: 1360px; margin: 0 auto; padding: clamp(80px, 9cqw, 140px) clamp(20px, 3.4cqw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: clamp(40px, 5cqw, 96px); align-items: center;">
+    <div class="rv" style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 24px;">
+      <span style="display: inline-flex; align-items: center; gap: 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.04em; color: #3D5552;"><span style="width: 36px; height: 1.5px; background: #13A3A3;"></span>Make a gift</span>
+      <h2 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(40px, 5cqw, 76px); line-height: 1; letter-spacing: -0.03em; font-weight: 400;">Help a young mind <em style="color: #13A3A3;">rise.</em></h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3D5552; max-width: 440px;">Every gift goes straight to mentoring, learning support and youth-led projects right here in Lakewood.</p>
+    </div>
+    <div class="donate-panel rv" style="flex: 1 1 460px; min-width: 0; background: #0F2A28; color: #F6F2EA; border-radius: 16px; padding: 44px; display: flex; flex-direction: column; gap: 22px;">
+      <div role="group" aria-label="Gift frequency" style="display: flex; background: #1B3B38; border-radius: 999px; padding: 5px;">
+        <button type="button" class="freq" data-freq="once" aria-pressed="true" style="flex: 1 1 0; height: 46px; border: 0; border-radius: 999px; font: inherit; font-weight: 600; font-size: 15px; cursor: pointer; transition: background-color .3s, color .3s;">One-time</button>
+          <button type="button" class="freq" data-freq="monthly" aria-pressed="false" style="flex: 1 1 0; height: 46px; border: 0; border-radius: 999px; font: inherit; font-weight: 600; font-size: 15px; cursor: pointer; transition: background-color .3s, color .3s;">Monthly</button>
+      </div>
+      <div role="group" aria-label="Gift amount" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px;">
+        <button type="button" class="amt" data-amount="25" aria-pressed="false" style="height: 64px; border-radius: 12px; font-family: 'Playfair Display', Georgia, serif; font-size: 24px; cursor: pointer; transition: background-color .3s, color .3s, border-color .3s;">$25</button>
+          <button type="button" class="amt" data-amount="50" aria-pressed="true" style="height: 64px; border-radius: 12px; font-family: 'Playfair Display', Georgia, serif; font-size: 24px; cursor: pointer; transition: background-color .3s, color .3s, border-color .3s;">$50</button>
+          <button type="button" class="amt" data-amount="100" aria-pressed="false" style="height: 64px; border-radius: 12px; font-family: 'Playfair Display', Georgia, serif; font-size: 24px; cursor: pointer; transition: background-color .3s, color .3s, border-color .3s;">$100</button>
+          <button type="button" class="amt" data-amount="250" aria-pressed="false" style="height: 64px; border-radius: 12px; font-family: 'Playfair Display', Georgia, serif; font-size: 24px; cursor: pointer; transition: background-color .3s, color .3s, border-color .3s;">$250</button>
+      </div>
+      <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #D5E2DF; min-height: 52px;" id="impact" aria-live="polite">$50 helps fund weekly tutoring for a young person.</p>
+      <a class="btn" href="#donate" style="display: flex; align-items: center; justify-content: space-between; background: #F2B33D; color: #0F2A28; text-decoration: none; padding: 8px 8px 8px 28px; border-radius: 999px; font-weight: 700; font-size: 17px;"><span id="cta">Donate $50</span>
+        <span class="chip" style="width: 48px; height: 48px; background: #0F2A28;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#F2B33D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+      </a>
+      <span style="display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; color: #A9C0BC;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A9C0BC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>Secure giving. Receipt by email.</span>
+    </div>
+  </section>
+
+  <!-- GET INVOLVED -->
+  <section id="involved" style="max-width: 1360px; margin: 0 auto; padding: 0 clamp(20px, 3.4cqw, 48px) clamp(80px, 9cqw, 140px); box-sizing: border-box; display: flex; flex-direction: column; gap: 48px;">
+    <h2 class="rv" style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(40px, 5cqw, 76px); line-height: 1; letter-spacing: -0.03em; font-weight: 400;">There's a place <em style="color: #13A3A3;">for you</em> in this.</h2>
+    <div class="split" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px;">
+      <a class="panel rv" href="#contact" style="display: flex; flex-direction: column; text-decoration: none; color: #0F2A28; background: #FFFFFF; border-radius: 16px; overflow: hidden;">
+        <div style="height: 340px; overflow: hidden; background: #DCD5C7;"><img class="zimg" src="images/volunteer.webp" alt="A volunteer at a community event" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block;"></div>
+        <div style="padding: 34px; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px;">
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 36px; font-weight: 400; letter-spacing: -0.02em;">Volunteer</h3>
+            <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3D5552;">A few hours a month as a mentor, tutor or event helper. No experience needed, just heart.</p>
+          </div>
+          <span class="chip" style="width: 52px; height: 52px; background: #0F2A28;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F6F2EA" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+        </div>
+      </a>
+      <a class="panel rv" href="#contact" style="display: flex; flex-direction: column; text-decoration: none; color: #F6F2EA; background: #0E7C7C; border-radius: 16px; overflow: hidden;">
+        <div style="height: 340px; overflow: hidden; background: #DCD5C7;"><img class="zimg" src="images/writing.webp" alt="A boy concentrating as he writes in his notebook" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%; display: block;"></div>
+        <div style="padding: 34px; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px;">
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 36px; font-weight: 400; letter-spacing: -0.02em;">Partner with us</h3>
+            <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #E3F2F0;">Schools, businesses and local groups: let's build something for Lakewood's young people together.</p>
+          </div>
+          <span class="chip" style="width: 52px; height: 52px; background: #F2B33D;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F2A28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="position: relative; background: #F2B33D; color: #0F2A28; overflow: hidden;">
+    <svg width="760" height="760" viewBox="0 0 760 760" style="position: absolute; right: -220px; top: -260px; opacity: 0.22;" aria-hidden="true"><circle cx="380" cy="380" r="379" fill="none" stroke="#FFFFFF" stroke-width="2"></circle><circle cx="380" cy="380" r="290" fill="none" stroke="#FFFFFF" stroke-width="2"></circle><circle cx="380" cy="380" r="200" fill="none" stroke="#FFFFFF" stroke-width="2"></circle></svg>
+    <svg width="520" height="520" viewBox="0 0 520 520" style="position: absolute; left: -200px; bottom: -240px; opacity: 0.22;" aria-hidden="true"><circle cx="260" cy="260" r="259" fill="none" stroke="#FFFFFF" stroke-width="2"></circle><circle cx="260" cy="260" r="170" fill="none" stroke="#FFFFFF" stroke-width="2"></circle></svg>
+    <div style="position: relative; max-width: 1360px; margin: 0 auto; padding: clamp(80px, 9cqw, 130px) clamp(20px, 3.4cqw, 48px) clamp(80px, 9cqw, 130px); box-sizing: border-box;">
+    <div class="split rv" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); border-radius: 28px; overflow: hidden; background: #FFFFFF; box-shadow: 0 2px 0 rgba(120,78,0,0.10), 0 40px 90px rgba(110,70,0,0.30);">
+
+      <div class="panel" style="position: relative; min-height: 600px; background: #0F2A28; overflow: hidden;">
+        <img class="zimg" src="images/mentoring.webp" alt="Young people laughing and talking together around a table" loading="lazy" decoding="async" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 42% 50%;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(10,26,24,0.10) 0%, rgba(10,26,24,0.30) 40%, rgba(10,26,24,0.92) 100%);"></div>
+        <div style="position: absolute; top: 28px; left: 28px; display: inline-flex; align-items: center; gap: 10px; background: #F2B33D; color: #0F2A28; padding: 10px 16px 10px 12px; border-radius: 999px; font-weight: 700; font-size: 14px;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0F2A28" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"></path></svg>
+          We'd love to hear from you
+        </div>
+        <div style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(28px, 3.4cqw, 52px); display: flex; flex-direction: column; gap: 18px; color: #F6F2EA;">
+          <span style="display: inline-flex; align-items: center; gap: 12px; font-size: 14px; font-weight: 600; letter-spacing: 0.04em; color: #D5E2DF;"><span style="width: 36px; height: 1.5px; background: #F2B33D;"></span>Contact us</span>
+          <h2 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(56px, 5.8cqw, 96px); line-height: 0.95; letter-spacing: -0.035em; font-weight: 400;">Let's <em style="color: #F2B33D;">talk.</em></h2>
+          <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #E2ECEA; max-width: 400px;">Questions, ideas, or a young person you'd love us to meet. Pick a topic and we'll make sure it reaches the right person.</p>
+        </div>
+      </div>
+
+      <div class="contact-card" style="min-width: 0; background: #FFFFFF; color: #0F2A28; padding: clamp(28px, 3.8cqw, 60px); box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <form id="contactForm" novalidate style="display: flex; flex-direction: column; gap: 26px;">
+            <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px;">
+              <legend style="padding: 0; margin-bottom: 14px; font-size: 15px; font-weight: 700; letter-spacing: 0.02em;">What can we help with?</legend>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <button type="button" class="topic" data-topic="Volunteering" aria-pressed="true" style="display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px; border-radius: 999px; font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; transition: background-color .3s, color .3s, border-color .3s;"><svg class="tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F2B33D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 10 17 19 7"></path></svg>Volunteering</button>
+                <button type="button" class="topic" data-topic="Donating" aria-pressed="false" style="display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px; border-radius: 999px; font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; transition: background-color .3s, color .3s, border-color .3s;"><svg class="tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F2B33D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 10 17 19 7"></path></svg>Donating</button>
+                <button type="button" class="topic" data-topic="Partnering" aria-pressed="false" style="display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px; border-radius: 999px; font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; transition: background-color .3s, color .3s, border-color .3s;"><svg class="tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F2B33D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 10 17 19 7"></path></svg>Partnering</button>
+                <button type="button" class="topic" data-topic="Enrolling a young person" aria-pressed="false" style="display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px; border-radius: 999px; font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; transition: background-color .3s, color .3s, border-color .3s;"><svg class="tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F2B33D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 10 17 19 7"></path></svg>Enrolling a young person</button>
+                <button type="button" class="topic" data-topic="Something else" aria-pressed="false" style="display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px; border-radius: 999px; font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; transition: background-color .3s, color .3s, border-color .3s;"><svg class="tick" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F2B33D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 10 17 19 7"></path></svg>Something else</button>
+              </div>
+            </fieldset>
+            <div style="display: flex; flex-wrap: wrap; gap: 18px;">
+              <div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 8px;">
+                <label for="c-name" style="font-size: 14px; font-weight: 700;">Your name</label>
+                <input class="fld" id="c-name" type="text" autocomplete="name" placeholder="Jane Smith" style="height: 56px; padding: 0 18px; border: 1.5px solid #E2DBCC; border-radius: 12px; background: #FAF8F4; color: #0F2A28; font: inherit; font-size: 17px;">
+              </div>
+              <div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 8px;">
+                <label for="c-email" style="font-size: 14px; font-weight: 700;">Email address <span style="color: #0E7C7C;">*</span></label>
+                <input class="fld" id="c-email" type="email" autocomplete="email" required placeholder="jane@email.com" style="height: 56px; padding: 0 18px; border: 1.5px solid #E2DBCC; border-radius: 12px; background: #FAF8F4; color: #0F2A28; font: inherit; font-size: 17px;">
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <label for="c-msg" style="font-size: 14px; font-weight: 700;">Message</label>
+              <textarea class="fld" id="c-msg" rows="5" placeholder="Tell us a little about what you have in mind..." style="padding: 16px 18px; border: 1.5px solid #E2DBCC; border-radius: 12px; background: #FAF8F4; color: #0F2A28; font: inherit; font-size: 17px; line-height: 1.5; resize: vertical;"></textarea>
+            </div>
+            <label for="c-news" style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.5; color: #3D5552; cursor: pointer;">
+              <input id="c-news" type="checkbox" style="width: 20px; height: 20px; margin: 1px 0 0; accent-color: #0E7C7C; flex: 0 0 auto;">
+              Send me stories, events and ways to help. Unsubscribe anytime.
+            </label>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-top: 4px;">
+              <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: #5D6B69;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5D6B69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>We'll never share your details.</span>
+              <button class="btn" type="submit" style="display: inline-flex; align-items: center; gap: 16px; padding: 8px 8px 8px 28px; border: 0; border-radius: 999px; background: #0F2A28; color: #F6F2EA; font: inherit; font-weight: 700; font-size: 16px; cursor: pointer;">Send message
+                <span class="chip" style="width: 44px; height: 44px; background: #F2B33D;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F2A28" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+              </button>
+            </div>
+          </form>
+        <div id="sentView" class="menu" role="status" hidden style="flex: 1 1 auto; min-height: 520px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 20px;">
+            <svg width="88" height="88" viewBox="0 0 88 88" aria-hidden="true"><circle cx="44" cy="44" r="42" fill="#F2B33D"></circle><path class="draw" d="M27 45.5 39 57 62 32" fill="none" stroke="#0F2A28" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 44px; font-weight: 400; letter-spacing: -0.02em;">Thank you!</h3>
+            <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3D5552; max-width: 380px;">Your message about <strong style="color: #0F2A28;" id="topicOut">volunteering</strong> is on its way. Someone from our team will be in touch soon.</p>
+            <button class="btn" type="button" id="resetBtn" style="margin-top: 8px; height: 52px; padding: 0 26px; border: 1.5px solid #0F2A28; border-radius: 999px; background: transparent; color: #0F2A28; font: inherit; font-weight: 600; font-size: 15px; cursor: pointer;">Send another message</button>
+          </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background: #0F2A28; color: #F6F2EA;">
+    <div style="max-width: 1360px; margin: 0 auto; padding: 56px clamp(20px, 3.4cqw, 48px) 36px; box-sizing: border-box;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; padding: 0 0 28px; font-size: 15px; color: #A9C0BC; border-bottom: 1px solid #2B4744;">
+        <nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 28px;">
+          <a class="ul" href="#about" style="color: #D5E2DF;">About</a>
+          <a class="ul" href="#programs" style="color: #D5E2DF;">Programs</a>
+          <a class="ul" href="#involved" style="color: #D5E2DF;">Volunteer</a>
+          <a class="ul" href="#donate" style="color: #F2B33D;">Donate</a>
+        </nav>
+        <span>© 2026 Lakewood Rising Minds. All rights reserved.</span>
+      </div>
+      <div style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(44px, 10.2cqw, 148px); line-height: 1; letter-spacing: -0.045em; color: #F6F2EA; padding-top: 24px; white-space: nowrap;">Lakewood <em style="color: #13A3A3;">Rising</em> Minds</div>
+    </div>
+  </footer>
+
+</div>
+<script>
+(function(){
+  var d=document;
+  // reveal fallback
+  if(!(window.CSS&&CSS.supports&&CSS.supports('animation-timeline: view()'))&&'IntersectionObserver' in window){
+    d.documentElement.classList.add('io');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+    d.querySelectorAll('.rv,.rule').forEach(function(el){io.observe(el);});
+  }
+  // mobile menu
+  var btn=d.getElementById('menuBtn'),menu=d.getElementById('mobileMenu');
+  function setMenu(open){menu.hidden=!open;btn.setAttribute('aria-expanded',open);btn.setAttribute('aria-label',open?'Close menu':'Open menu');}
+  btn.addEventListener('click',function(){setMenu(menu.hidden);});
+  d.querySelectorAll('[data-close-menu]').forEach(function(a){a.addEventListener('click',function(){setMenu(false);});});
+  d.addEventListener('keydown',function(e){if(e.key==='Escape'&&!menu.hidden){setMenu(false);btn.focus();}});
+  // donation picker
+  var impacts={25:'$25 helps stock a student with the supplies they need to learn.',50:'$50 helps fund weekly tutoring for a young person.',100:'$100 helps match a young person with a mentor.',250:'$250 helps power a youth-led community project.'};
+  var amount=50,freq='once';
+  function paint(){
+    d.querySelectorAll('.amt').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.amount===amount);});
+    d.querySelectorAll('.freq').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.freq===freq);});
+    d.getElementById('impact').textContent=impacts[amount]+(freq==='monthly'?' Every single month.':'');
+    d.getElementById('cta').textContent='Donate $'+amount+(freq==='monthly'?' monthly':'');
+  }
+  d.querySelectorAll('.amt').forEach(function(b){b.addEventListener('click',function(){amount=+b.dataset.amount;paint();});});
+  d.querySelectorAll('.freq').forEach(function(b){b.addEventListener('click',function(){freq=b.dataset.freq;paint();});});
+  // contact form
+  var topic='Volunteering',form=d.getElementById('contactForm'),sent=d.getElementById('sentView'),email=d.getElementById('c-email');
+  d.querySelectorAll('.topic').forEach(function(b){b.addEventListener('click',function(){topic=b.dataset.topic;d.querySelectorAll('.topic').forEach(function(x){x.setAttribute('aria-pressed',x===b);});});});
+  email.addEventListener('input',function(){email.classList.remove('err');});
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!email.value||!email.checkValidity()){email.classList.add('err');email.focus();return;}
+    d.getElementById('topicOut').textContent=topic.toLowerCase();
+    form.hidden=true;sent.hidden=false;
+  });
+  d.getElementById('resetBtn').addEventListener('click',function(){form.reset();sent.hidden=true;form.hidden=false;});
+})();
+</script>
+</body>
+</html>
